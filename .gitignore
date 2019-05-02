@@ -3,3 +3,4 @@
 # before adding to this file
 
 venv/
+dist/
