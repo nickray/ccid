@@ -1,0 +1,25 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "ccid"
+author = "SoloKeys"
+author-email = "hello@solokeys.com"
+home-page = "https://github.com/solokeys/ccid"
+requires-python = ">=3.6"
+requires = [
+  "click >= 7.0",
+]
+classifiers=[
+    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+]
+
+[tool.flit.scripts]
+ccid = "ccid.cli:ccid_cli"
